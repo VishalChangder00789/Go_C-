@@ -2,6 +2,8 @@
 using namespace std;
 
 // preprocessing
+//! Information : sum of 5boxes - sum of 2boxes will give sum of 3 boxes.
+
 int *cummulativeSumSubarray(int arr[], int n)
 {
     int *cs = new int[n];
