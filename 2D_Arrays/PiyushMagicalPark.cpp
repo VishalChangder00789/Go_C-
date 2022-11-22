@@ -36,7 +36,7 @@ using namespace std;
     return Yes if he comes out.
 
 
-    Sample Input
+    Sample Input :
     4 4 5 20  M,N,K,S respectively.
 
     !Input for character array
@@ -44,6 +44,9 @@ using namespace std;
     . # . .
     * * . .
     . # * *
+
+    Output:
+    Yes
 
 */
 
