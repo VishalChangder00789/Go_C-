@@ -2,6 +2,38 @@
 #include <algorithm>
 using namespace std;
 
+// Pending update
+void Rotate_STL(int arr[][10], int m)
+{
+
+    // reverse
+    for (int i = 0; i < m; i++)
+    {
+        reverse(arr[i], arr[i + m]);
+    }
+
+    // take transpose
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            if (i < j)
+            {
+                swap(arr[i][j], arr[j][i]);
+            }
+        }
+    }
+
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            cout << arr[i][j] << " , ";
+        }
+        cout << endl;
+    }
+}
+
 void RotateImage(int arr[][10], int m)
 {
 
@@ -72,5 +104,6 @@ int main()
         }
     }
 
-    RotateImage(arr, m);
+    // RotateImage(arr, m);
+    Rotate_STL(arr, m);
 }
