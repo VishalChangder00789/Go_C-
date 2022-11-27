@@ -1,0 +1,12 @@
+{
+  "files.associations": {
+    "iostream": "cpp",
+    "ostream": "cpp",
+    "xstring": "cpp",
+    "charconv": "cpp",
+    "xmemory": "cpp",
+    "istream": "cpp",
+    "string": "cpp",
+    "algorithm": "cpp"
+  }
+}
