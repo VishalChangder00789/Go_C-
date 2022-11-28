@@ -41,6 +41,8 @@ int main()
     int arr[] = {1, 23, 4, 5, 6, 7, 89, 10};
     int n = sizeof(arr) / sizeof(arr[0]);
 
+    sort(arr, arr + n, compare); // STL sort
+
     bubbleSort(arr, n, compare); // Polymorphism
     for (int i = 0; i < n; i++)
     {
