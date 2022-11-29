@@ -1,52 +1,55 @@
 #include <iostream>
 using namespace std;
 
-bool canPlace(int st[], int n, int c, int min_sep)
+bool ifCowsbePlaced(int stalls[], int n, int c, int sep)
 {
-    int lastCow = st[0];
-    int cnt = 1;
-    for (int i = 1; i < n; i++)
+    int lastCowPlaced = stalls[0];
+    int count = 1;
+    for (int i = 0; i < n; i++)
     {
-        if (st[i] - lastCow >= min_sep)
+        if (stalls[i] - lastCowPlaced >= sep)
         {
-            lastCow = st[i];
-            cnt++;
-            if (cnt == c)
+            count++;
+            lastCowPlaced = stalls[i];
+            if (count == c)
             {
                 return true;
             }
         }
     }
-
     return false;
 }
-int main()
+int AggressiveCows(int stalls[], int n, int c)
 {
-    int st[] = {1, 2, 4, 8, 9};
-    int n = 5;
-    int c = 3;
-    int ans = 0;
-
     int s = 0;
-    int e = st[n - 1] - st[0];
+    int e = (stalls[n - 1] - stalls[0]);
+    int ans = 0;
 
     while (s <= e)
     {
-        int m = (s + e) / 2;
+        int mid = (s + e) / 2;
 
-        bool place = canPlace(st, n, c, m);
-
-        if (place)
+        bool canPlace = ifCowsbePlaced(stalls, n, c, mid);
+        if (canPlace)
         {
-            ans = m;
-            s = m + 1;
+            ans = mid;
+            s = mid + 1;
         }
         else
         {
-            e = m - 1;
+            e = mid - 1;
         }
     }
 
-    cout << ans;
+    return ans;
+}
+int main()
+{
+    int stalls[] = {1, 2, 4, 8, 9};
+    int n = 5;
+    int c = 3;
+    int res = AggressiveCows(stalls, n, c);
+    cout << res << endl;
+
     return 0;
 }
