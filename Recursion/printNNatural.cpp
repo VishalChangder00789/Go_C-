@@ -16,6 +16,19 @@ void printNNatural_Decreasing(int n)
     printNNatural_Decreasing(n - 1);
 }
 
+void printNNatural_Increasing_Two(int n)
+{
+
+    if (n == 0)
+    {
+        return;
+    }
+
+    // Decrese the number to the very least and then print it at the end.
+    printNNatural_Increasing_Two(n - 1);
+    cout << n << " ";
+}
+
 // Increasing
 void printNNatural_Increasing(int n)
 {
@@ -39,5 +52,6 @@ void printNNatural_Increasing(int n)
 int main()
 {
     // printNNatural_Increasing(5);
-    printNNatural_Decreasing(5);
+    // printNNatural_Decreasing(5);
+    printNNatural_Increasing_Two(5);
 }

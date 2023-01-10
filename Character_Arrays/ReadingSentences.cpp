@@ -1,5 +1,5 @@
 // It is important to read sentences with spaces included.
-// C++ already includes a method called cin.getline(a,1000,delim);
+// C++ already includes a method called cin.getline(a,1000,delim) breaks at a custom delim character.
 // Alternatively same polymorphed method cin.getline(a,1000);
 #include <iostream>
 using namespace std;
