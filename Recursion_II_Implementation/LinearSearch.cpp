@@ -4,6 +4,11 @@ using namespace std;
 int LinearSearch(int arr[], int n, int key, int i)
 {
 
+    if (n == 0)
+    {
+        return -1;
+    }
+
     if (arr[0] == key)
     {
         return i;
