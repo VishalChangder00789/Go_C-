@@ -1,6 +1,31 @@
 #include <iostream>
 using namespace std;
 
+int NormalBinarySearch(int a[], int n, int key)
+{
+
+    int s = 0;
+    int e = n - 1;
+
+    while (s <= e)
+    {
+        int m = (s + e) / 2;
+
+        if (a[m] == key)
+        {
+            return m;
+        }
+
+        if (a[m] < key)
+        {
+            e = m - 1;
+        }
+        else
+        {
+            s = m + 1;
+        }
+    }
+}
 int RecursiveBinary(int a[], int n, int key, int s, int e)
 {
 
