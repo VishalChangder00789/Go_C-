@@ -8,6 +8,7 @@
     "istream": "cpp",
     "string": "cpp",
     "algorithm": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "random": "cpp"
   }
 }
