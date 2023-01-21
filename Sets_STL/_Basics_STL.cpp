@@ -5,7 +5,8 @@
  *         : STL sets : insertion , deletion , searching, deletion
  * @version 0.1
  * @date 2023-01-21
- *
+ *  Insertion : O(log(n))
+ *  Deletion : O(log(n))
  * @copyright Copyright (c) 2023
  *
  */
