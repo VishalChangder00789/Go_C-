@@ -1,6 +1,6 @@
 /**
  * @file _Basics.cpp
- * @author your name (you@domain.com)
+ * @author Bishal Changder || changdervishal1999@gmail.com
  * @brief  :
  *          Ordered Maps are also called maps.
  * They store the items in a increasing fashion.
