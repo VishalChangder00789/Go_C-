@@ -55,7 +55,7 @@ int _op_FindUnique(int arr[], int n)
 
 int main()
 {
-    int arr[] = {2, 3, 7, 6, 3, 6, 2};
+    int arr[] = {1, 2, 2, 1, 3};
     int n = sizeof(arr) / sizeof(arr[0]);
 
     int element = _brute_FindUnique(arr, n);
