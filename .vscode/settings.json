@@ -9,6 +9,8 @@
     "string": "cpp",
     "algorithm": "cpp",
     "vector": "cpp",
-    "random": "cpp"
+    "random": "cpp",
+    "utility": "cpp",
+    "xtree": "cpp"
   }
 }
