@@ -4,6 +4,8 @@
 
 // !! Works in the case of sorted array
 
+//!! More optimization is required in case of unsorted array ,( Left Modified)
+
 using namespace std;
 
 vector<int> pairSum(vector<int> &nums, int target)
