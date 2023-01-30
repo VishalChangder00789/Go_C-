@@ -108,29 +108,35 @@ void print_Vector_2(vector<vector<int>> &v)
 vector<vector<int>> ThreeSum_Optimized(vector<int> &nums)
 {
 
-    // Not working for some reason to be with held for later.
+    // Not working for some reason to be with held for later. Date : 31/01/2023.: 12:40 A.M
+    // TODO :: Correct the code output.
 
     sort(nums.begin(), nums.end());
     vector<vector<int>> v_s;
 
-    for (int i = 0; i < nums.size(); i++)
+    for (int i = 0; i < nums.size() - 2; i++)
     {
-        if (i == 0 || (i > 0 && nums[i] != nums[i + 1]))
+        //? Date : 31/01/2023.   01:37 A.M
+
+        // Update 1 : Inside the if condition : Check was faulty , we need to check the element
+        // ahead with the element behind in the array.
+
+        // Early fault :
+        //! if (i == 0 || (i > 0 && nums[i] != nums[i+1]))
+
+        if (i == 0 || (i > 0 && nums[i] != nums[i - 1])) // fault was here : Now Corrected
         {
-            int h = i + 1;
-            int l = nums.size() - 1;
+            int l = i + 1;
+            int h = nums.size() - 1;
             int target = 0 - nums[i];
-            cout << target << endl;
-            while (l < h)
+            while (l <= h)
             {
                 if (nums[l] + nums[h] == target)
                 {
-                    cout << "Enter" << endl;
                     vector<int> v;
                     v.push_back(nums[i]);
                     v.push_back(nums[l]);
                     v.push_back(nums[h]);
-                    print_vector(v);
                     v_s.push_back(v);
 
                     while (l < h && nums[l] == nums[l + 1])
@@ -161,8 +167,8 @@ vector<vector<int>> ThreeSum_Optimized(vector<int> &nums)
 
 int main()
 {
-    // vector<int> v{-1, 0, 1, 2, -1, -4};
-    vector<int> v{-1, -2, -2, -1, -1, 2, 0, 2, 0, 0, 2};
+    vector<int> v{-1, 0, 1, 2, -1, -4};
+    // vector<int> v{-1, -2, -2, -1, -1, 2, 0, 2, 0, 0, 2};
     // ThreeSum_Brute(-v);
     // ThreeSum_Better(v);
     ThreeSum_Optimized(v);

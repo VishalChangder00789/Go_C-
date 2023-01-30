@@ -19,7 +19,7 @@ vector<int> pairSum(vector<int> &nums, int target)
     {
 
         int ans = (nums[i] + nums[j]);
-        cout << nums[i] << "," << nums[j] << endl;
+        // cout << nums[i] << "," << nums[j] << endl;
 
         if (ans == target)
         {
@@ -43,8 +43,8 @@ vector<int> pairSum(vector<int> &nums, int target)
 
 int main()
 {
-    vector<int> nums{3, 2, 4};
-    int key = 6;
+    vector<int> nums{1, 2, 3, 4, 5};
+    int key = 5;
     vector<int> res = pairSum(nums, key);
     cout << "===========" << endl;
     for (int i = 0; i < res.size(); i++)
