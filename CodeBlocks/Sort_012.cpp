@@ -100,6 +100,17 @@ void sort_012(vector<int> &v)
 
 int main()
 {
+
+    // Reference for vector practice
+
+    vector<int> v1(5, 0);
+    cout << "Printing empty vector : " << endl;
+    print_vector(v1);
+    cout << endl;
+    cout << "Printing empty vector done : " << endl;
+
+    // Reference for vector practice
+
     vector<int> v{0, 1, 2, 0, 1, 2};
     sort_012_op(v);
     // sort_012_cp(v);
