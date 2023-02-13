@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 
+//!     CAN BE OPTIMIZED
+
 using namespace std;
 
 vector<int> FindSum(vector<int> &a, vector<int> &b)
