@@ -6,10 +6,8 @@ using namespace std;
 
 void readline(char a[], int maxLength)
 {
-
     int i = 0;
     char ch = cin.get();
-
     while (ch != '\n')
     {
         a[i] = ch;
@@ -29,11 +27,11 @@ void readline(char a[], int maxLength)
 int main()
 {
 
-    // char a[1000];
-    // readline(a, 10);
-    // cout << a;
+    char a[1000];
+    readline(a, 10);
+    cout << a;
 
-    char s[10];
-    cin >> s;
-    cout << s;
+    // char s[10];
+    // cin >> s;
+    // cout << s;
 }
