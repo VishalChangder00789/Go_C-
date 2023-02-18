@@ -1,5 +1,5 @@
 /*
-    Medium :
+    Medium : Question are important and revision is very important
 
     567. Permutation in String
 Medium
