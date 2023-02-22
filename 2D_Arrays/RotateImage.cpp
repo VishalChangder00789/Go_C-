@@ -1,5 +1,7 @@
 // Very Confusing
 
+// Check for the Practice folder in the root directory
+
 #include <iostream>
 #include <algorithm>
 using namespace std;

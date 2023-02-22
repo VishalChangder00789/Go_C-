@@ -1,3 +1,5 @@
+// Check for the practice folder in root directory
+
 #include <iostream>
 using namespace std;
 
