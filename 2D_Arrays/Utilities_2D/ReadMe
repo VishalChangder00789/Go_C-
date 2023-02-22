@@ -1,0 +1,19 @@
+How to link two files in C++
+
+A : How to use methods of one .cpp file to another .cpp file
+
+    1. Create a "transferFrom.cpp" and "transferFrom.h"     in our case ( Utils.h and Utils.cpp)
+    2. Define the methods in the "transferFrom.cpp" clearly.
+    3. Declare all the methods in ""transferFrom.cpp"" file  inside "transferFrom.h" file
+
+B : Use and Compile
+
+    1. Create a file "transferTo.cpp" in which you want to use the methods from tranferFrom.cpp File
+     in our case (BasicFunction.cpp).
+
+    2. Compile the file as "g++ transferFrom.cpp  transferTo.cpp"
+    3. To run the files : ".\a.exe"
+
+Reason to manually compile : That is how the files are compiled in c++ but since i was using codeRunner to run the file it was ez. Now the code runner won't identify the file.
+
+Code Runner runs and compiles the code.
