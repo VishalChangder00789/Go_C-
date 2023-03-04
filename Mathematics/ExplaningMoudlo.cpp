@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-/*
+/*g
     Why printing the value using modulo :
 
     Modulo is a concept which is mainly used to adjust answers which are bigger in size which cannot
