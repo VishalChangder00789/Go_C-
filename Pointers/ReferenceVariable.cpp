@@ -46,11 +46,13 @@ void update1(int &param)
 
 int main()
 {
-    // int a = 100;
-    // int &b = a; // pointing to the same address
+    int a = 100;
+    int &b = a; // pointing to the same address
+    int z = 100;
+    b = z; // throw error
 
-    // cout << "Normal Variable ; " << &a << endl;
-    // cout << "Reference variable : " << &b << endl;
+    cout << "Normal Variable ; " << &a << endl;
+    cout << "Reference variable : " << &b << endl;
 
     // cout << "===========================" << endl;
 
